@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="334" height="384" viewBox="0 0 334 384">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 0;
+        stroke-dasharray: 0.001 0;
+        fill-rule: evenodd;
+        stroke: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="167" y1="384" x2="167" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M0,96V287l167,97,166-96,1-191L167,0Zm24,48L161,55l135,89H271V271l-97,56V304l-7-7V250h83s4-.626,4-4V190a3.006,3.006,0,0,0-3-3H240V172H81v15H74s-3,.578-3,3v4s0.863,2,4,2h6v21H240V197h4v43H161s-4,.95-4,4v53l-7,7v23L49,271V145Z"/>
+</svg>
