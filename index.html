@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Ремонт квартир</title>
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="" />
+  <meta name="keywords" content=""/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-wrap">
+      <div class="container header-wrap-bg">
+        <div class="header-wrap_logo">
+          <img src="img/logo.png" alt="РемФлэт">
+          <h2>РемФлэт</h2>
+        </div>
+        <div class="header-wrap_adress">
+          <span>
+            Москва, 1 Нагатинский пр-д, д.11
+          </span>
+          <span>
+            Ежедневно с 10:00 до 19:00
+          </span>
+        </div>
+        <div class="header-wrap_contacts">
+          <span>
+              <a href="tel:">+7(495)999-99-99</a>
+          </span>
+          <span>
+              <a href="mailto:">info@remflat.ru</a>
+          </span>
+        </div>
+        <div class="header-wrap_button">
+          <button class="button callback">Задать вопрос</button>
+        </div>
+      </div>
+    </div>
+    <nav class="header-nav container">
+      <ul>
+        <li><a href="#">Преимущества</a></li>
+        <li><a href="#">Работы</a></li>
+        <li><a href="#">Этапы</a></li>
+        <li><a href="#">Виды работ</a></li>
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-title container">
+      <h1>Ремонт квартир под ключ в Москве от 9000 р/м2</h1>
+      <a class="button scrollto" href="#calc">Рассчитать стоимость</a>
+    </div>
+    <div class="header-calc" id="calc">
+      <div class="header-calc-wrap container">
+        <div class="title">Узнай стоимость и сроки ремонта за 5 минут</div>
+        <div class="header-calc-wrap-form">
+          <div class="header-calc-wrap-form_input"><label for="">Кол-во комнат</label><input class="rooms" type="text" placeholder="4"></div>
+          <div class="header-calc-wrap-form_input"><label for="">Общая площадь</label><input class="metr" type="text" placeholder="28"></div>
+          <div class="header-calc-wrap-form_input"><label for="">Тип жилья</label>
+            <select name="" id="" class="type">
+              <option value="Новостройка">Новостройка</option>
+              <option value="Вторичное жилье">Вторичное</option>
+            </select>
+          </div>
+          <div class="header-calc-wrap-form_input"><label for="">Дизайнн - проект</label>
+            <select name="" id="" class="design">
+              <option value="Есть свой дизайн">У вас есть дизайн-проект</option>
+              <option value="Вам нужно создать дизайн-проект">Вам нужно создать дизайн-проект</option>
+            </select>
+          </div>
+          <button class="button callback-calc">Рассчитать стоимость</button>
+        </div>
+        <div class="popup-calc">
+            <div class="popup-close">&times;</div>
+            <div class="title">Отправьте заявку на подсчет стоимости</div>
+            <label for="">Как к вам обращаться?</label>
+            <input type="text">
+            <label for="">Ваш телефон</label>
+            <input type="text">
+            <div class="popup-calc-text">
+                <div class="title">Проверьте данные:</div>
+                <div>- Квартира <span id="rooms"></span>х комнатная</div>
+                <div>- Её площадь: <span id="metr"></span> м/2</div>
+                <div>- <span id="type"></span></div>
+                <div>- <span id="design"></span></div>
+              </div>
+            <input class="button" type="submit">
+            <small>
+                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+            </small>
+            
+          </div>
+      </div>
+    </div>
+    
+  </header>
+  <section class="features">
+    <div class="title">Что такое ремонт <strong>под ключ</strong> у РемФлэт?</div>
+    <div class="features-wrap container">
+      <div class="features-wrap-item">
+        <img src="img/icons/home.png" alt="">
+        <p>Мы вместе с Вами продумываем
+            все технические и дизайнерские аспекты. 
+           Создаем 3D-проект</p>
+      </div>
+      <div class="features-wrap-item">
+        <img src="img/icons/pig.png" alt="">
+        <p>Подбираем нужные материалы, подсказываем где сэкономить, а где лучше заплатить за качество
+          </p>
+      </div>
+      <div class="features-wrap-item">
+        <img src="img/icons/website.png" alt="">
+        <p>Составляем подробный план работ, 
+            заранее готовим бригаду и следим 
+            за сроками исполнения</p>
+      </div>
+      <div class="features-wrap-item">
+        <img src="img/icons/good.png" alt="">
+        <p>Контролируем все этапы работ, сдаем проект только когда работа сделана на отлично!</p>
+      </div>
+      <div class="features-wrap-item">
+        <img src="img/icons/broom.png" alt="">
+        <p>Оставляем после себя чистую квартиру, полностью готовую к заселению и проживанию</p>
+      </div>
+      <div class="features-wrap-item">
+        <img src="img/icons/conversation.png" alt="">
+        <p>Оказываем техническую поддержку после сдачи ремонта и реагируем на любые нарекания</p>
+      </div>
+    </div>
+  </section>
+  <section class="work container">
+    <div class="title">Наши работы</div>
+    <div class="work-wrap">
+        <div class="work-wrap-item">
+            <div class="work-item-left">
+              <img src="img/feedback/1.jpg" alt="">
+            </div>
+            <div class="work-wrap-item-right">
+              <div class="title">
+                Ремонт 3х комнатной квартиры в блочкном доме в Москве
+              </div>
+              <div class="work-wrap-item-right-avatar">
+                <img src="img/feedback/ebalo.png" alt="">
+                <strong>Наталья Иванова, хозяйка салона красоты</strong>
+              </div>
+              <div class="work-wrap-item-right-text">
+                <p>
+                    «Я часто бываю в разъездах и у меня нет физической возможности постоянно находится в квартире, где идет ремонт и контролировать каждый процесс. В RemFlat я нашла понимание своих интересов с первых минут общения. Мы подробно обсудили мои желания: что я хочу изменить, какой дизайн мне больше по душе. Проговорили, как будет выглядеть каждая комната, туалет и ванная. 
+                </p>
+                <p>Понравилось, что не пришлось ездить по строительным магазинам в поисках стройматериалов. Все делают сотрудники и предоставляют полный отчет по стоимости. Мы подобрали пол, плитку и выбрали обои. Вся черновая работа также проходила без моего участия. Все погрузочно-разгрузочные работы уже были включены в стоимость. </p>
+                <p>Каждый этап был проделан согласно договора. Результат просто фантастический. Теперь я живу в красивой, стильно оформленной квартире, о которой всю жизнь мечтала».</p>
+              </div>
+            </div>
+          </div>
+        <div class="work-wrap-item">
+            <div class="work-item-left">
+              <img src="img/feedback/1.jpg" alt="">
+            </div>
+            <div class="work-wrap-item-right">
+              <div class="title">
+                Ремонт 3х комнатной квартиры в блочкном доме в Москве
+              </div>
+              <div class="work-wrap-item-right-avatar">
+                <img src="img/feedback/ebalo.png" alt="">
+                <strong>Наталья Иванова, хозяйка салона красоты</strong>
+              </div>
+              <div class="work-wrap-item-right-text">
+                <p>
+                    «Я часто бываю в разъездах и у меня нет физической возможности постоянно находится в квартире, где идет ремонт и контролировать каждый процесс. В RemFlat я нашла понимание своих интересов с первых минут общения. Мы подробно обсудили мои желания: что я хочу изменить, какой дизайн мне больше по душе. Проговорили, как будет выглядеть каждая комната, туалет и ванная. 
+                </p>
+                <p>Понравилось, что не пришлось ездить по строительным магазинам в поисках стройматериалов. Все делают сотрудники и предоставляют полный отчет по стоимости. Мы подобрали пол, плитку и выбрали обои. Вся черновая работа также проходила без моего участия. Все погрузочно-разгрузочные работы уже были включены в стоимость. </p>
+                <p>Каждый этап был проделан согласно договора. Результат просто фантастический. Теперь я живу в красивой, стильно оформленной квартире, о которой всю жизнь мечтала».</p>
+              </div>
+            </div>
+          </div>
+        <div class="work-wrap-item">
+            <div class="work-item-left">
+              <img src="img/feedback/1.jpg" alt="">
+            </div>
+            <div class="work-wrap-item-right">
+              <div class="title">
+                Ремонт 3х комнатной квартиры в блочкном доме в Москве
+              </div>
+              <div class="work-wrap-item-right-avatar">
+                <img src="img/feedback/ebalo.png" alt="">
+                <strong>Наталья Иванова, хозяйка салона красоты</strong>
+              </div>
+              <div class="work-wrap-item-right-text">
+                <p>
+                    «Я часто бываю в разъездах и у меня нет физической возможности постоянно находится в квартире, где идет ремонт и контролировать каждый процесс. В RemFlat я нашла понимание своих интересов с первых минут общения. Мы подробно обсудили мои желания: что я хочу изменить, какой дизайн мне больше по душе. Проговорили, как будет выглядеть каждая комната, туалет и ванная. 
+                </p>
+                <p>Понравилось, что не пришлось ездить по строительным магазинам в поисках стройматериалов. Все делают сотрудники и предоставляют полный отчет по стоимости. Мы подобрали пол, плитку и выбрали обои. Вся черновая работа также проходила без моего участия. Все погрузочно-разгрузочные работы уже были включены в стоимость. </p>
+                <p>Каждый этап был проделан согласно договора. Результат просто фантастический. Теперь я живу в красивой, стильно оформленной квартире, о которой всю жизнь мечтала».</p>
+              </div>
+            </div>
+          </div>
+        <div class="work-wrap-item">
+            <div class="work-item-left">
+              <img src="img/feedback/1.jpg" alt="">
+            </div>
+            <div class="work-wrap-item-right">
+              <div class="title">
+                Ремонт 3х комнатной квартиры в блочкном доме в Москве
+              </div>
+              <div class="work-wrap-item-right-avatar">
+                <img src="img/feedback/ebalo.png" alt="">
+                <strong>Наталья Иванова, хозяйка салона красоты</strong>
+              </div>
+              <div class="work-wrap-item-right-text">
+                <p>
+                    «Я часто бываю в разъездах и у меня нет физической возможности постоянно находится в квартире, где идет ремонт и контролировать каждый процесс. В RemFlat я нашла понимание своих интересов с первых минут общения. Мы подробно обсудили мои желания: что я хочу изменить, какой дизайн мне больше по душе. Проговорили, как будет выглядеть каждая комната, туалет и ванная. 
+                </p>
+                <p>Понравилось, что не пришлось ездить по строительным магазинам в поисках стройматериалов. Все делают сотрудники и предоставляют полный отчет по стоимости. Мы подобрали пол, плитку и выбрали обои. Вся черновая работа также проходила без моего участия. Все погрузочно-разгрузочные работы уже были включены в стоимость. </p>
+                <p>Каждый этап был проделан согласно договора. Результат просто фантастический. Теперь я живу в красивой, стильно оформленной квартире, о которой всю жизнь мечтала».</p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+  <section class="ethaps container">
+    <div class="title">Как мы делаем ремонт:</div>
+    <div class="title">Этапы и подход</div>
+    <div class="ethaps-item">
+     <div class="ethaps-item-left">
+        <div class="title">1. Подготовка и расчет стоимости</div>
+      <p>Работа начинается ещё до того, как мы впервые вошли в вашу квартиру. Заранее подготовлены типовые части архитектурного проекта, разработаны критерии качества, расписаны задачи каждого специалиста, подобраны материалы.</p>
+      <p>Мы изучаем особенности домов Москвы и Подмосковья и собираем базу данных, которая позволяет рассчитать объём работ и материалов для ремонта в вашей квартире. Поэтому вы сразу можете узнать итоговую стоимость — прямо на сайте.</p>
+     </div>
+     <div class="ethaps-item-right">
+       <img src="img/steps/1.jpg" alt="">
+     </div>
+    </div>
+    <div class="ethaps-item">
+        <div class="ethaps-item-right">
+            <img src="img/steps/2.jpg" alt="">
+          </div>
+     <div class="ethaps-item-left">
+        <div class="title">2. Черновые и инженерные работы</div>
+      <p>После подписания договора мы переходим к работе с вашей квартирой. Снимаем точные замеры, готовим архитектурный план и график работ. Для каждой квартиры выпускается свой уникальный проект и рабочая документация.</p>
+      <p>Дальше мы приступаем к черновым работам. Они занимают большую часть времени — 45-55 дней. Качество черновых работ — это фундамент, который гарантирует долговечность ремонта. Если в квартире есть старая отделка, мы её демонтируем. Если </p>
+     </div>
+     
+    </div>
+    <div class="ethaps-item">
+     <div class="ethaps-item-left">
+        <div class="title">3. Чистовая отделка</div>
+      <p>После того как закончены черновые и инженерные работы, производятся новые замеры квартиры. Тогда же рисуется план раскладки плитки — важно, чтобы выводы розеток попадали в шов или центр плитки. На этом этапе мы выполняем все работы в ванной и туалете, укладываем напольное покрытие, готовим стены к окраске или клеим обои. Ближе к концу ремонта устанавливаем сантехнику, двери и проводим малярные работы. На все операции уходит от недели до двух.</p>
+     </div>
+     <div class="ethaps-item-right">
+       <img src="img/steps/3.jpg" alt="">
+     </div>
+    </div>
+    <div class="ethaps-item">
+        <div class="ethaps-item-right">
+            <img src="img/steps/4.jpg" alt="">
+          </div>
+     <div class="ethaps-item-left">
+        <div class="title">4. Финальные штрихи</div>
+      <p>Наконец, мы вывозим мусор, делаем генеральную уборку и приглашаем архитектора. Он обращает внимание на нюансы, которые вы, возможно, и не заметили бы, но без которых ремонт нельзя считать идеальным. Архитектор не пройдёт мимо плохо прокрашенных мест — пусть их почти и не видно — и неаккуратных углов у плинтусов.</p>
+      <p>
+          Мелкие недочёты оперативно устраняются. Квартира готова. Нам остаётся только вернуть вам ключи — и можно заезжать!</p>
+     </div>
+     
+    </div>
+    <div class="ethaps-maz">
+      <img src="img/maz.png" alt="">
+      <p>
+          Если возникнут какие-то проблемы, мы 
+          приедем и бесплатно решим их. 
+          Гарантия на ремонт два года
+      </p>
+    </div>
+  </section>
+  <div class="js-title">
+      <div class="title">Выполняем работы любой сложности</div>
+      <strong>Для создания безупречного ремонта в вашей квартире</strong>
+  </div>
+  
+  <section class="js container">
+    <div class="js-plus item1">
+      +
+      <div class="js-plus-text">
+        Установка натяжных потолков и не только
+      </div>
+    </div>
+    <div class="js-plus item2">
+      +
+      <div class="js-plus-text">
+        Установка кондиционеров
+      </div>
+    </div>
+    <div class="js-plus item3">
+      +
+      <div class="js-plus-text">
+        Установка различных окон
+      </div>
+    </div>
+    <div class="js-plus item4">
+      +
+      <div class="js-plus-text">
+        Установку кухни и фурнитура
+      </div>
+    </div>
+    <div class="js-plus item5">
+      +
+      <div class="js-plus-text">
+        Установка встроенной техники
+      </div>
+    </div>
+    <div class="js-plus item6">
+      +
+      <div class="js-plus-text">
+        Установка пола любого формата
+      </div>
+    </div>
+  </section>
+  <section class="package container">
+    <div class="title">Выберите свой пакет услуг</div>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi perspiciatis ratione dolore mollitia praesentium nam sint fuga quia molestias.</div>
+    <div class="package-wrap">
+      <div class="package-wrap-item">
+        <div class="title">Эконом</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <div class="ot">от 50 т.р</div>
+        <button class="button">Заказать</button>
+      </div>
+      <div class="package-wrap-item">
+        <div class="title">Эконом</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <div class="ot">от 50 т.р</div>
+        <button class="button">Заказать</button>
+      </div>
+      <div class="package-wrap-item">
+        <div class="title">Эконом</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <div class="ot">от 50 т.р</div>
+        <button class="button">Заказать</button>
+      </div>
+      
+    </div>
+  </section>
+	<section class="question container">
+    <div class="question-wrap">
+        <div class="title">
+          Гарантия, оплата и другие вопросы
+        </div>
+      <div class="question-wrap-title">
+          Что входит в стоимость ремонта?
+      </div>
+      <div class="question-wrap-text">
+       <p>Мы делаем ремонт под ключ по системе «все включено». В стоимость входят все работы, чистовые и черновые материалы, готовый дизайн-проект, организация, менеджмент, гарантия, онлайн отчетность о ходе ремонта. Цена фиксируется при подписании договора и не меняется до конца ремонта.
+       </p>
+      </div>
+      <div class="question-wrap-title">
+          Делаете ли вы перепланировку помещения?
+      </div>
+      <div class="question-wrap-text">
+       <p>Да, делаем, но только те изменения, которые являются законными и могут быть согласованы с Мосжилинспекцией. Услуга бесплатная для тех клиентов, которые заказали ремонт в нашей компании. Мы делаем саму планировку без согласования с государственными органами и внесения изменений в документы. Для заказа оставьте заявку, и мы свяжемся с вами в течение рабочего дня.
+       </p>
+      </div>
+      <div class="question-wrap-title">
+        Можно ли объединить комнату с балконом?
+      </div>
+      <div class="question-wrap-text">
+       <p>Вопрос неоднозначный. В большинстве случаев такие работы не проводятся, так как вносят изменения в конструкцию дома и объем самого помещения. Тепловые мощности домов не рассчитаны на обогрев увеличенных площадей. В некоторых домах есть возможность получить разрешение на снесение части стены, но только если она не является несущей. И даже в этом случае необходимо установить стеклянную перегородку для сохранения теплового контура квартиры.
+       </p>
+      </div>
+      <div class="question-wrap-title">
+        У вас есть услуга согласования перепланировки?
+      </div>
+      <div class="question-wrap-text">
+       <p>К сожалению, мы не занимаемся процессом согласования.
+       </p>
+      </div>
+      
+    </div>
+  </section>		
+  <section class="about container">
+    <div class="about-img">
+      <img src="img/about.png" alt="">
+    </div>
+    <div class="title">Цель «RemFlat» — идеальный ремонт, продуманный до мелочей.</div>
+    <p>
+      Компания основана в 2014 году имя и имя. В начале деятельности компания была ориентирована только капитальный ремонт квартир в типовых домах. С развитием добавлялись сотрудники, были приглашены в штат дизайнеры. Сегодня мы делаем ремонты любого вида сложности. Понимаем желания клиентов и можем воплотить в жизнь практически любую задумку. Работаем с любыми видами помещений и домов:
+    </p>
+    <ul>
+      <li>Панельный</li>
+      <li>Монолитный</li>
+      <li>Кирпичный</li>
+      <li>Блочный</li>
+    </ul>
+    <p>Для вашего удобства и экономии времени мы создали на сайте онлайн-конструктор. Вы можете подобрать идеальные дизайнерские решения, а мы воплотим их в вашем интерьере.</p>
+  </section>
+  <section class="comand container">
+    <div class="title">Наша команда</div>
+    <div class="comand-item">
+      <div class="comand-item-left">
+        <img src="img/comand.png" alt="">
+      </div>
+      <div class="comand-item-right">
+        <div class="title">Александр Андреев</div>
+        <strong>Руководитель</strong>
+        <p>
+          «Мы берем на себя все неприятные нюансы, связанные с выбором материалов по техническим характеристикам, поиск минимальных цен, доставку и занос на объек. Вам остается наслаждаться созданием дизайна и архитектурных решений.»
+        </p>
+      </div>
+    </div>
+    <div class="comand-item">
+      
+      <div class="comand-item-right">
+        <div class="title">Александр Андреев</div>
+        <strong>Руководитель</strong>
+        <p>
+          «Мы берем на себя все неприятные нюансы, связанные с выбором материалов по техническим характеристикам, поиск минимальных цен, доставку и занос на объек. Вам остается наслаждаться созданием дизайна и архитектурных решений.»
+        </p>
+      </div>
+      <div class="comand-item-left">
+        <img src="img/comand.png" alt="">
+      </div>
+    </div>
+    <div class="comand-item">
+      <div class="comand-item-left">
+        <img src="img/comand.png" alt="">
+      </div>
+      <div class="comand-item-right">
+        <div class="title">Александр Андреев</div>
+        <strong>Руководитель</strong>
+        <p>
+          «Мы берем на себя все неприятные нюансы, связанные с выбором материалов по техническим характеристикам, поиск минимальных цен, доставку и занос на объек. Вам остается наслаждаться созданием дизайна и архитектурных решений.»
+        </p>
+      </div>
+    </div>
+    <strong class="comand-text">
+      Компания насчитывает более 70 работников от разнорабочих до специалистов по логистике, архитекторов, дизайнеров и инженеров. В случае специфических требований к ремонту, мы на постоянной основе сотрудничаем с более 300 квалифицированными мастерами.
+    </strong class="comand-text">
+  </section>
+  <footer class="footer">
+    <div class="footer-wrap container">
+      <div class="footer-wrap-left">
+        <p>
+          офис на нагитнской находится рядом с метро такое то
+          
+        </p>
+        <p>Собственный склад - там то там то текст нужен</p>
+        <a href="mailto:">example@mail.ru</a>
+      </div>
+      <div class="footer-wrap-right">
+        <p>
+          Офис находится по адресу:
+        </p>
+        <p>
+          Нагатинский проезд д1 москва, тоже текст нужен точный
+        </p>
+        <p>текст как пройти наверное, нужно пройтись</p>
+        <a href="tel:">+7 (999) 999-99-99</a>
+      </div>
+    </div>
+  </footer>
+<div class="overlay"></div>
+<div class="popup">
+  <div class="popup-close">&times;</div>
+  <div class="title">Закажите обратный звонок</div>
+  <label for="">Как к вам обращаться?</label>
+  <input type="text">
+  <label for="">Ваш телефон</label>
+  <input type="text">
+  <input class="button" type="submit">
+  <small>
+      Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+  </small>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
