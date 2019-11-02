@@ -1927,6 +1927,10 @@ div.slick-slide {
 }
 
 @media (max-width: 578px) {
+  .work-item-left img {
+    width: 100%;
+    height: 100%;
+  }
   .comand {
     padding: 30px 15px 30px 15px;
   }
