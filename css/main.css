@@ -1368,8 +1368,10 @@ div.slick-slide {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 320px;
+  width: 320px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  z-index: 999999;
 }
 
 .popup-close {
@@ -1457,6 +1459,8 @@ div.slick-slide {
   max-width: 320px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  width: 320px;
+  z-index: 999999;
 }
 
 .popup-calc-text {
@@ -2093,9 +2097,17 @@ div.slick-slide {
   }
 }
 
-@media (max-width: 360px) {
-  body {
-    background-color: #fff;
+@media (max-height: 580px) {
+  .popup-calc {
+    padding: 10px;
+  }
+  .popup-calc div.title {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0;
+  }
+  .popup-calc input {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
