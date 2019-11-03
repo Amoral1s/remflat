@@ -40,37 +40,24 @@ $(document).ready(function () {
     $('.popup').addClass('popup-active');
   });
   
-  $('.callback-calc').on('click', function () {
-    if ($('.rooms').val() === '' || $('.metr').val() === '' || $('.rooms').val() === isNaN || $('.metr').val() === isNaN) {
-      alert('Заполните все поля правильно!');
-    } else {
-      $('.overlay').addClass('overlay-active');
-      $('.popup-calc').addClass('popup-active');
-      $('#type').text($('.type').val());
-      $('#design').text($('.design').val());
-    }
-  });
+  
   $('.popup-close').on('click', function() {
     $('.overlay').removeClass('overlay-active');
     $('.popup').removeClass('popup-active');
     $('.popup-calc').removeClass('popup-active');
+    $('.popup-calc2').removeClass('popup-active');
   });
   $('.overlay').on('click', function() {
     $('.overlay').removeClass('overlay-active');
     $('.popup').removeClass('popup-active');
     $('.popup-calc').removeClass('popup-active');
+    $('.popup-calc2').removeClass('popup-active');
   });
   jQuery("a.scrollto").click(function () {
     elementClick = jQuery(this).attr("href");
     destination = jQuery(elementClick).offset().top;
     jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
     return false;
-  });
-  $('.rooms').change(function (){
-    $('#rooms').text($('.rooms').val());
-  });
-  $('.metr').change(function (){
-    $('#metr').text($('.metr').val());
   });
 
   if ($(window).width() < 992) {
@@ -85,4 +72,40 @@ $('#toggle').on('click', function () {
    $('.ethaps-item-right').remove();
    $('.ethaps-maz').remove();
  }
+
+var rooms = $('.rooms'),
+    metr = $('.metr'),
+    type = $('#type'),
+    design = $('#design'),
+    result = $('.result'),
+    days = $('.res-time'),
+    resVal = 0,
+    button = $('.callback-calc');
+    
+
+$(button).on('click', function() {
+  if (metr.val() === '' || metr.val() === isNaN || rooms.val() === isNaN || rooms.val() === '') {
+    alert('Заполните все поля для расчета правильно!');
+  }
+  else {
+    resVal = +metr.val() * 4000;
+    daysResult = +metr.val() * type.val();
+    $(result).text(+resVal + +design.val());
+    $(days).text(daysResult);
+    $('#rooms').text(rooms.val());
+    $('#metr').text(metr.val());
+    
+    $('.popup-calc').addClass('popup-active');
+    $('.overlay').addClass('overlay-active');
+  }
+
+});
+
+$('#calc-button').on('click', function () { 
+  $('.popup-calc2').addClass('popup-active');
+  $('.popup-calc').removeClass('popup-active');
+ });
+
+
+
 });

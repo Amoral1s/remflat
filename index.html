@@ -62,46 +62,56 @@
       <h1>Ремонт квартир под ключ в Москве от 9000 р/м2</h1>
       <a class="button scrollto" href="#calc">Рассчитать стоимость</a>
     </div>
+    
     <div class="header-calc" id="calc">
       <div class="header-calc-wrap container">
         <div class="title">Узнай стоимость и сроки ремонта за 5 минут</div>
         <div class="header-calc-wrap-form">
           <div class="header-calc-wrap-form_input"><label for="">Кол-во комнат</label><input class="rooms" type="text" placeholder="4"></div>
-          <div class="header-calc-wrap-form_input"><label for="">Общая площадь</label><input class="metr" type="text" placeholder="28"></div>
+          <div class="header-calc-wrap-form_input"><label for="">Общая площадь</label><input class="metr" type="text" placeholder="28" value="0"></div>
           <div class="header-calc-wrap-form_input"><label for="">Тип жилья</label>
-            <select name="" id="" class="type">
-              <option value="Новостройка">Новостройка</option>
-              <option value="Вторичное жилье">Вторичное</option>
+            <select name="" id="type" class="type">
+              <option value="1">Новостройка</option>
+              <option value="1.3">Вторичное</option>
             </select>
           </div>
           <div class="header-calc-wrap-form_input"><label for="">Дизайнн - проект</label>
-            <select name="" id="" class="design">
-              <option value="Есть свой дизайн">У вас есть дизайн-проект</option>
-              <option value="Вам нужно создать дизайн-проект">Вам нужно создать дизайн-проект</option>
+            <select name="" id="design" class="design">
+              <option value="0">У вас есть дизайн-проект</option>
+              <option value="600">Вам нужно создать дизайн-проект</option>
             </select>
           </div>
           <button class="button callback-calc">Рассчитать стоимость</button>
         </div>
         <div class="popup-calc">
             <div class="popup-close">&times;</div>
+            <div class="title">Расчет стоимости ремонта</div>
+            <div class="popup-calc-text">
+                <div class="title">Проверьте данные:</div>
+                <div>- Квартира <span id="rooms"></span>х комнатная</div>
+                <div>- Её площадь: <span id="metr"></span> м/2</div>
+            </div>
+            <div class="popup-calc-result">
+              <div class="title">Стоимость ремонта составит:</div>
+              <div><span class="result"></span> р</div>
+              <div class="title">Примерные сроки ремонта:</div>
+              <div><span class="res-time"></span> дней</div>
+            </div>
+            <input class="button" type="submit" id="calc-button" value="Оставить заявку">
+            
+        </div>
+        <div class="popup-calc2">
+            <div class="popup-close">&times;</div>
             <div class="title">Отправьте заявку на подсчет стоимости</div>
             <label for="">Как к вам обращаться?</label>
             <input type="text">
             <label for="">Ваш телефон</label>
             <input type="text">
-            <div class="popup-calc-text">
-                <div class="title">Проверьте данные:</div>
-                <div>- Квартира <span id="rooms"></span>х комнатная</div>
-                <div>- Её площадь: <span id="metr"></span> м/2</div>
-                <div>- <span id="type"></span></div>
-                <div>- <span id="design"></span></div>
-              </div>
             <input class="button" type="submit">
             <small>
                 Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#">Политикой конфиденциальности</a>
             </small>
-            
-          </div>
+        </div>
       </div>
     </div>
     
@@ -137,6 +147,137 @@
       <div class="features-wrap-item">
         <img src="img/icons/conversation.png" alt="">
         <p>Оказываем техническую поддержку после сдачи ремонта и реагируем на любые нарекания</p>
+      </div>
+    </div>
+  </section>
+  <section class="package container">
+    <div class="title">Выберите свой пакет услуг</div>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi perspiciatis ratione dolore mollitia praesentium nam sint fuga quia molestias.</div>
+    <div class="package-wrap">
+      <div class="package-wrap-item">
+        <div class="title">Эконом</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <div class="ot">от 50 т.р</div>
+        <button class="button">Заказать</button>
+      </div>
+      <div class="package-wrap-item">
+        <div class="title">Эконом</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <div class="ot">от 50 т.р</div>
+        <button class="button">Заказать</button>
+      </div>
+      <div class="package-wrap-item">
+        <div class="title">Эконом</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
+        <div class="ot">от 50 т.р</div>
+        <button class="button">Заказать</button>
+      </div>
+      
+    </div>
+  </section>
+  
+  <section class="ethaps container">
+    <div class="title">Как мы делаем ремонт:</div>
+    <div class="title">Этапы и подход</div>
+    <div class="ethaps-item">
+     <div class="ethaps-item-left">
+        <div class="title">1. Подготовка и расчет стоимости</div>
+      <p>Работа начинается ещё до того, как мы впервые вошли в вашу квартиру. Заранее подготовлены типовые части архитектурного проекта, разработаны критерии качества, расписаны задачи каждого специалиста, подобраны материалы.</p>
+      <p>Мы изучаем особенности домов Москвы и Подмосковья и собираем базу данных, которая позволяет рассчитать объём работ и материалов для ремонта в вашей квартире. Поэтому вы сразу можете узнать итоговую стоимость — прямо на сайте.</p>
+     </div>
+     <div class="ethaps-item-right">
+       <img src="img/steps/1.jpg" alt="">
+     </div>
+    </div>
+    <div class="ethaps-item">
+        <div class="ethaps-item-right">
+            <img src="img/steps/2.jpg" alt="">
+          </div>
+     <div class="ethaps-item-left">
+        <div class="title">2. Черновые и инженерные работы</div>
+      <p>После подписания договора мы переходим к работе с вашей квартирой. Снимаем точные замеры, готовим архитектурный план и график работ. Для каждой квартиры выпускается свой уникальный проект и рабочая документация.</p>
+      <p>Дальше мы приступаем к черновым работам. Они занимают большую часть времени — 45-55 дней. Качество черновых работ — это фундамент, который гарантирует долговечность ремонта. Если в квартире есть старая отделка, мы её демонтируем. Если </p>
+     </div>
+     
+    </div>
+    <div class="ethaps-item">
+     <div class="ethaps-item-left">
+        <div class="title">3. Чистовая отделка</div>
+      <p>После того как закончены черновые и инженерные работы, производятся новые замеры квартиры. Тогда же рисуется план раскладки плитки — важно, чтобы выводы розеток попадали в шов или центр плитки. На этом этапе мы выполняем все работы в ванной и туалете, укладываем напольное покрытие, готовим стены к окраске или клеим обои. Ближе к концу ремонта устанавливаем сантехнику, двери и проводим малярные работы. На все операции уходит от недели до двух.</p>
+     </div>
+     <div class="ethaps-item-right">
+       <img src="img/steps/3.jpg" alt="">
+     </div>
+    </div>
+    <div class="ethaps-item">
+        <div class="ethaps-item-right">
+            <img src="img/steps/4.jpg" alt="">
+          </div>
+     <div class="ethaps-item-left">
+        <div class="title">4. Финальные штрихи</div>
+      <p>Наконец, мы вывозим мусор, делаем генеральную уборку и приглашаем архитектора. Он обращает внимание на нюансы, которые вы, возможно, и не заметили бы, но без которых ремонт нельзя считать идеальным. Архитектор не пройдёт мимо плохо прокрашенных мест — пусть их почти и не видно — и неаккуратных углов у плинтусов.</p>
+      <p>
+          Мелкие недочёты оперативно устраняются. Квартира готова. Нам остаётся только вернуть вам ключи — и можно заезжать!</p>
+     </div>
+     
+    </div>
+    <div class="ethaps-maz">
+      <img src="img/maz.png" alt="">
+      <p>
+          Если возникнут какие-то проблемы -
+          Гарантия на ремонт два года
+      </p>
+    </div>
+  </section>
+  <div class="js-title">
+      <div class="title">Выполняем работы любой сложности</div>
+      <strong>Для создания безупречного ремонта в вашей квартире</strong>
+  </div>
+  
+  <section class="js container">
+    <div class="js-plus item1">
+      
+      <div class="js-plus-text">
+        Установка натяжных потолков и не только
+      </div>
+    </div>
+    <div class="js-plus item2">
+      
+      <div class="js-plus-text">
+        Установка кондиционеров
+      </div>
+    </div>
+    <div class="js-plus item3">
+      
+      <div class="js-plus-text">
+        Установка различных окон
+      </div>
+    </div>
+    <div class="js-plus item4">
+      
+      <div class="js-plus-text">
+        Установку кухни и фурнитура
+      </div>
+    </div>
+    <div class="js-plus item5">
+      
+      <div class="js-plus-text">
+        Установка встроенной техники
+      </div>
+    </div>
+    <div class="js-plus item6">
+      
+      <div class="js-plus-text">
+        Установка пола любого формата
       </div>
     </div>
   </section>
@@ -227,137 +368,6 @@
               </div>
             </div>
           </div>
-    </div>
-  </section>
-  <section class="ethaps container">
-    <div class="title">Как мы делаем ремонт:</div>
-    <div class="title">Этапы и подход</div>
-    <div class="ethaps-item">
-     <div class="ethaps-item-left">
-        <div class="title">1. Подготовка и расчет стоимости</div>
-      <p>Работа начинается ещё до того, как мы впервые вошли в вашу квартиру. Заранее подготовлены типовые части архитектурного проекта, разработаны критерии качества, расписаны задачи каждого специалиста, подобраны материалы.</p>
-      <p>Мы изучаем особенности домов Москвы и Подмосковья и собираем базу данных, которая позволяет рассчитать объём работ и материалов для ремонта в вашей квартире. Поэтому вы сразу можете узнать итоговую стоимость — прямо на сайте.</p>
-     </div>
-     <div class="ethaps-item-right">
-       <img src="img/steps/1.jpg" alt="">
-     </div>
-    </div>
-    <div class="ethaps-item">
-        <div class="ethaps-item-right">
-            <img src="img/steps/2.jpg" alt="">
-          </div>
-     <div class="ethaps-item-left">
-        <div class="title">2. Черновые и инженерные работы</div>
-      <p>После подписания договора мы переходим к работе с вашей квартирой. Снимаем точные замеры, готовим архитектурный план и график работ. Для каждой квартиры выпускается свой уникальный проект и рабочая документация.</p>
-      <p>Дальше мы приступаем к черновым работам. Они занимают большую часть времени — 45-55 дней. Качество черновых работ — это фундамент, который гарантирует долговечность ремонта. Если в квартире есть старая отделка, мы её демонтируем. Если </p>
-     </div>
-     
-    </div>
-    <div class="ethaps-item">
-     <div class="ethaps-item-left">
-        <div class="title">3. Чистовая отделка</div>
-      <p>После того как закончены черновые и инженерные работы, производятся новые замеры квартиры. Тогда же рисуется план раскладки плитки — важно, чтобы выводы розеток попадали в шов или центр плитки. На этом этапе мы выполняем все работы в ванной и туалете, укладываем напольное покрытие, готовим стены к окраске или клеим обои. Ближе к концу ремонта устанавливаем сантехнику, двери и проводим малярные работы. На все операции уходит от недели до двух.</p>
-     </div>
-     <div class="ethaps-item-right">
-       <img src="img/steps/3.jpg" alt="">
-     </div>
-    </div>
-    <div class="ethaps-item">
-        <div class="ethaps-item-right">
-            <img src="img/steps/4.jpg" alt="">
-          </div>
-     <div class="ethaps-item-left">
-        <div class="title">4. Финальные штрихи</div>
-      <p>Наконец, мы вывозим мусор, делаем генеральную уборку и приглашаем архитектора. Он обращает внимание на нюансы, которые вы, возможно, и не заметили бы, но без которых ремонт нельзя считать идеальным. Архитектор не пройдёт мимо плохо прокрашенных мест — пусть их почти и не видно — и неаккуратных углов у плинтусов.</p>
-      <p>
-          Мелкие недочёты оперативно устраняются. Квартира готова. Нам остаётся только вернуть вам ключи — и можно заезжать!</p>
-     </div>
-     
-    </div>
-    <div class="ethaps-maz">
-      <img src="img/maz.png" alt="">
-      <p>
-          Если возникнут какие-то проблемы, мы 
-          приедем и бесплатно решим их. 
-          Гарантия на ремонт два года
-      </p>
-    </div>
-  </section>
-  <div class="js-title">
-      <div class="title">Выполняем работы любой сложности</div>
-      <strong>Для создания безупречного ремонта в вашей квартире</strong>
-  </div>
-  
-  <section class="js container">
-    <div class="js-plus item1">
-      
-      <div class="js-plus-text">
-        Установка натяжных потолков и не только
-      </div>
-    </div>
-    <div class="js-plus item2">
-      
-      <div class="js-plus-text">
-        Установка кондиционеров
-      </div>
-    </div>
-    <div class="js-plus item3">
-      
-      <div class="js-plus-text">
-        Установка различных окон
-      </div>
-    </div>
-    <div class="js-plus item4">
-      
-      <div class="js-plus-text">
-        Установку кухни и фурнитура
-      </div>
-    </div>
-    <div class="js-plus item5">
-      
-      <div class="js-plus-text">
-        Установка встроенной техники
-      </div>
-    </div>
-    <div class="js-plus item6">
-      
-      <div class="js-plus-text">
-        Установка пола любого формата
-      </div>
-    </div>
-  </section>
-  <section class="package container">
-    <div class="title">Выберите свой пакет услуг</div>
-    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi perspiciatis ratione dolore mollitia praesentium nam sint fuga quia molestias.</div>
-    <div class="package-wrap">
-      <div class="package-wrap-item">
-        <div class="title">Эконом</div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <div class="ot">от 50 т.р</div>
-        <button class="button">Заказать</button>
-      </div>
-      <div class="package-wrap-item">
-        <div class="title">Эконом</div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <div class="ot">от 50 т.р</div>
-        <button class="button">Заказать</button>
-      </div>
-      <div class="package-wrap-item">
-        <div class="title">Эконом</div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, assumenda?</p>
-        <div class="ot">от 50 т.р</div>
-        <button class="button">Заказать</button>
-      </div>
-      
     </div>
   </section>
 	<section class="question container">
