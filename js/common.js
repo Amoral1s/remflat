@@ -84,7 +84,7 @@ var rooms = $('.rooms'),
     
 
 $(button).on('click', function() {
-  if (metr.val() === '' || metr.val() === isNaN || rooms.val() === isNaN || rooms.val() === '') {
+  if (metr.val() === '' || metr.val() === isNaN || metr.val() === null ||rooms.val() === isNaN || rooms.val() === '') {
     alert('Заполните все поля для расчета правильно!');
   }
   else {
