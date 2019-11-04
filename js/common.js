@@ -88,13 +88,13 @@ $(button).on('click', function() {
     alert('Заполните все поля для расчета правильно!');
   }
   else {
-    resVal = +metr.val() * 4000;
-    daysResult = +metr.val() * type.val();
-    $(result).text(+resVal + +design.val());
+    resVal = ((+metr.val() * 4000) + +design.val()).toString();
+    daysResult = +metr.val() * type.val() / 2.5;
+    var total = resVal.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+    $(result).text(total);
     $(days).text(daysResult);
     $('#rooms').text(rooms.val());
     $('#metr').text(metr.val());
-    
     $('.popup-calc').addClass('popup-active');
     $('.overlay').addClass('overlay-active');
   }

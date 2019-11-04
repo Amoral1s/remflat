@@ -68,11 +68,11 @@
         <div class="title">Узнай стоимость и сроки ремонта за 5 минут</div>
         <div class="header-calc-wrap-form">
           <div class="header-calc-wrap-form_input"><label for="">Кол-во комнат</label><input class="rooms" type="text" placeholder="4"></div>
-          <div class="header-calc-wrap-form_input"><label for="">Общая площадь</label><input class="metr" type="text" placeholder="28" value="0"></div>
+          <div class="header-calc-wrap-form_input"><label for="">Общая площадь</label><input class="metr" type="text" placeholder="28"></div>
           <div class="header-calc-wrap-form_input"><label for="">Тип жилья</label>
             <select name="" id="type" class="type">
               <option value="1">Новостройка</option>
-              <option value="1.3">Вторичное</option>
+              <option value="1.15">Вторичное</option>
             </select>
           </div>
           <div class="header-calc-wrap-form_input"><label for="">Дизайнн - проект</label>
@@ -88,14 +88,14 @@
             <div class="title">Расчет стоимости ремонта</div>
             <div class="popup-calc-text">
                 <div class="title">Проверьте данные:</div>
-                <div>- Квартира <span id="rooms"></span>х комнатная</div>
-                <div>- Её площадь: <span id="metr"></span> м/2</div>
+                <div>- Квартира <span class="resdiv" id="rooms"></span>х комнатная</div>
+                <div>- Её площадь: <span class="resdiv" id="metr"></span> м/2</div>
             </div>
             <div class="popup-calc-result">
               <div class="title">Стоимость ремонта составит:</div>
-              <div><span class="result"></span> р</div>
+              <div class="resdiv"><span class="result"></span> р</div>
               <div class="title">Примерные сроки ремонта:</div>
-              <div><span class="res-time"></span> дней</div>
+              <div class="resdiv"><span class="res-time"></span> дней</div>
             </div>
             <input class="button" type="submit" id="calc-button" value="Оставить заявку">
             
