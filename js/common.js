@@ -105,7 +105,12 @@ $('#calc-button').on('click', function () {
   $('.popup-calc2').addClass('popup-active');
   $('.popup-calc').removeClass('popup-active');
  });
-
+$('.portfolio-item').on('mouseover', function () { 
+    $(this).children('.portfolio-item-text').addClass('port-active');
+});
+$('.portfolio-item').on('mouseout', function () { 
+    $(this).children('.portfolio-item-text').removeClass('port-active');
+});
 
 
 });

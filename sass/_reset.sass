@@ -1,0 +1,101 @@
+@font-face 
+	font-family: 'Ureg'
+	font-display: swap
+	src: url('../fonts/Ubuntu-Regular.ttf')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'Ubold'
+	font-display: swap
+	src: url('../fonts/Ubuntu-Bold.ttf')
+	font-weight: normal
+	font-style: normal
+@font-face 
+	font-family: 'Ubold2'
+	font-display: swap
+	src: url('../fonts/agfatumc-bold.otf')
+	font-weight: normal
+	font-style: normal
+
+$reg: "Ureg", sans-serif
+$bold: "Ubold", sans-serif
+$bold2: "Ubold2", sans-serif
+$main: #dd4127
+$light: #fff
+$accent: #2c2c2c
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body, html
+	margin: 0
+	padding: 0
+	width: auto
+	overflow-x: hidden
+	height: auto
+	color: #000
+	font-family: $reg
+	box-sizing: border-box
+	font-size: 14px
+	line-height: 18px
+	-ms-overflow-style: scrollbar
+
+a, a:hover, a:active, a:link, a:focus
+	text-decoration: none
+	outline: none
+
+ol, ul 
+	list-style: none
+	font-size: 18px
+
+div, span, article, nav, section,main, header
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+input, button, select, textarea
+	appearance: none
+	border: 1px solid red
+
+input:focus, textarea:focus, select:focus
+	outline: none
+h1, h2, h3, h4, h5
+	font-size: 28px
+	width: 100%
+	font-family: $bold
+
+.container 
+	width: 100%
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+
+.container-fluid 
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+
+.row 
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  align-items: center
+@media (min-width: 576px) 
+  .container 
+    max-width: 540px
+
+@media (min-width: 768px) 
+  .container 
+    max-width: 720px
+
+@media (min-width: 992px) 
+  .container 
+    max-width: 960px
+
+@media (min-width: 1200px) 
+  .container 
+    max-width: 1140px 
+

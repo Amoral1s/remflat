@@ -1,0 +1,70 @@
+@media (max-width: 440px)
+  .portfolio-item
+    flex-basis: 100%
+  div.comand-item:nth-child(3)
+    flex-direction: column-reverse
+  .comand
+    &-item
+      flex-direction: column
+      align-items: center
+      &-left
+        img
+          max-width: 120px
+  .about
+    &-img
+      img
+        max-width: 320px
+  .package
+    &-wrap
+      &-item
+        flex-basis: 90%
+  .features
+    &-wrap
+      &-item
+        flex-direction: column
+        img
+          margin-bottom: 15px
+        p
+          text-align: center
+  .header
+    background-size: contain
+    background-position: center 220px
+    background-size: 200%
+    &-title
+      margin-top: 40px
+    &-calc
+      margin-top: 40px
+      &-wrap
+        &-form
+          &_input
+            label
+              padding-left: 10px
+              &:after
+                right: 20px
+            input
+              width: 100%
+            select
+              width: 100%
+    &-wrap
+      &_contacts
+        padding-left: 30px
+        margin-top: 10px
+        justify-content: flex-start
+        span:last-child
+          display: flex
+          width: 100%
+          justify-content: flex-start
+          position: relative
+          a
+            font-size: 16px
+          &:after
+            position: absolute
+            content: ''
+            height: 15px
+            width: 20px
+            left: -25px
+            top: 50%
+            transform: translateY(-50%)
+            background-image: url(../img/icons/mail.png)
+            background-repeat: no-repeat
+            background-size: cover

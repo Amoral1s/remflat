@@ -1,0 +1,132 @@
+@media (max-width: 768px)
+  .price-wrap-table
+    flex-wrap: wrap
+  .columns
+    flex-basis: 100%
+    margin-bottom: 30px
+  .footer
+    padding: 30px 0
+    &-wrap
+      flex-direction: column
+      align-items: center
+      &-left
+        flex-basis: 100%
+      &-right
+        flex-basis: 100%
+  .package
+    padding-bottom: 0
+    &-wrap
+      flex-wrap: wrap
+      justify-content: space-around
+      &-item
+        flex-basis: 45%
+        margin-bottom: 30px
+  .js
+    background-position: top left
+    margin-top: 20px
+    min-height: 390px
+    background-size: cover
+    margin-bottom: 30px
+  .item1
+    top: 20px
+    right: 20px
+    left: auto
+  .item2
+    top: 80px
+    right: 20px
+    left: auto
+  .item3
+    top: 140px
+    right: 20px
+    left: auto
+  .item4
+    top: 200px
+    right: 20px
+    left: auto
+  .item5
+    top: 260px
+    right: 20px
+    left: auto
+  .item6
+    top: 320px
+    right: 20px
+    left: auto
+  .ethaps
+    padding-bottom: 30px
+    &-item
+      &-left
+        p
+          padding: 0
+          padding-top: 20px
+    div:nth-child(3)
+      margin-top: 20px
+  .features
+    &-wrap
+      &-item
+        flex-basis: 49%
+  #toggle
+    display: block
+    position: fixed
+    right: 40px
+    top: 40px
+    z-index: 999
+    box-shadow: 0 0 5px rgba(#ffffff, 0.4)
+    span
+      display: flex
+      position: absolute
+      right: 0
+      top: 0
+      height: 4px
+      width: 30px
+      margin: 3px 0
+      background-color: $accent
+      transition: 0.5s
+      top: 0
+      right: 0
+    span:nth-child(2)
+      top: 8px
+    span:nth-child(3)
+      top: 16px
+  .toggle-active
+    span:nth-child(1)
+      transform: rotate(135deg)
+      position: absolute
+      top: 10px!important
+    span:nth-child(2)
+      transform: rotate(-135deg)
+      position: absolute
+      top: 10px!important
+    span:nth-child(3)
+      transform: rotate(-225deg)
+      position: absolute  
+      top: 10px!important
+
+
+  .header
+    &-nav
+      position: fixed
+      left: 0
+      top: 0
+      margin: 0
+      padding: 0
+      width: 70%
+      display: none
+      z-index: 99999
+      ul
+        display: flex
+        flex-direction: column
+        background-color: $accent
+        padding: 20px
+        border-radius: 0 0 13px 0
+        li
+          padding: 10px
+            
+    &-wrap
+      padding-top: 30px
+      min-height: 210px
+      &-bg
+        flex-wrap: wrap
+      &_logo
+        flex-basis: 100%
+        margin-bottom: 15px
+        justify-content: center
