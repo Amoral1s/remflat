@@ -2265,6 +2265,9 @@ div.slick-slide {
 }
 
 @media (max-width: 992px) {
+  .header-price {
+    background-image: url(../img/header.jpg);
+  }
   .contacts-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2785,6 +2788,9 @@ div.slick-slide {
     background-size: contain;
     background-position: center 220px;
     background-size: 200%;
+  }
+  .header-price {
+    background-size: cover;
   }
   .header-title {
     margin-top: 40px;
