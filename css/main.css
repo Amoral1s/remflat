@@ -2219,6 +2219,61 @@ div.slick-slide {
   height: 100%;
 }
 
+.type {
+  padding: 50px 0;
+  border-radius: 13px;
+  margin: 50px auto;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+}
+
+.type div.title {
+  line-height: 24px;
+}
+
+.type-text h2 {
+  font-size: 22px;
+  text-align: left;
+  margin: 25px 0;
+  margin-bottom: 15px;
+}
+
+.type-text p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.type-text b {
+  margin: 10px 0;
+}
+
+.type-text ul {
+  margin: 20px 0;
+}
+
+.type-text ul li {
+  margin: 10px 0;
+  font-family: "Ubold", sans-serif;
+  position: relative;
+  padding-left: 30px;
+}
+
+.type-text ul li:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  height: 30px;
+  width: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../img/icons/check-circle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #toggle {
   display: none;
 }
@@ -2471,6 +2526,21 @@ div.slick-slide {
 }
 
 @media (max-width: 768px) {
+  .type {
+    padding: 20px;
+  }
+  .type div.title {
+    font-size: 18px;
+  }
+  .type-text h2 {
+    font-size: 18px;
+  }
+  .type-text p, .type-text b {
+    font-size: 14px;
+  }
+  .type-text ul li {
+    font-size: 14px;
+  }
   .price-wrap-table {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
