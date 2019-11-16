@@ -1251,6 +1251,7 @@ div.slick-slide {
 .comand-item-left img {
   max-width: 200px;
   margin: 0 30px;
+  border-radius: 50%;
 }
 
 .comand div:nth-child(3) div.comand-item-right:after {
