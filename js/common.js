@@ -113,4 +113,32 @@ $('.portfolio-item').on('mouseout', function () {
 });
 
 
+
+const slider = () => {
+
+    
+  const slide = document.querySelectorAll('.page-calc-item');
+
+  const slider = document.querySelector('.page-calc');
+
+  let currentSlide = 0;
+
+  const nextSlide = (elem, index, strClass) => {
+    elem[index].classList.add(strClass);
+    elem[index-1].classList.remove(strClass);
+  };
+
+  slider.addEventListener('click', (event) => {
+    let target = event.target;
+
+    if (target.matches('.calc-button-next')) {
+      currentSlide++;
+      nextSlide(slide, currentSlide, 'calc-item-active');
+    }
+    
+  });
+  
+};
+slider();
+
 });

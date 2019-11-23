@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Ремонт квартир</title>
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="" />
+  <meta name="keywords" content=""/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+  <div class="header-wrap">
+    <div class="container header-wrap-bg">
+      <div class="header-wrap_logo">
+        <img src="img/logo.png" alt="РемФлэт">
+        <h2>РемФлэт</h2>
+        <div id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      </div>
+      <div class="header-wrap_adress">
+        <span>
+          Москва, 1 Нагатинский пр-д, д.11
+        </span>
+        <span>
+          Ежедневно с 10:00 до 19:00
+        </span>
+      </div>
+      <div class="header-wrap_contacts">
+        <span>
+            <a href="tel:">+7(495)999-99-99</a>
+        </span>
+        <span>
+            <a href="mailto:">info@remflat.ru</a>
+        </span>
+      </div>
+      <div class="header-wrap_button">
+        <button class="button callback">Задать вопрос</button>
+      </div>
+    </div>
+  </div>
+  <nav class="header-nav container">
+    <ul>
+      <li><a href="#">Преимущества</a></li>
+      <li><a href="#">Работы</a></li>
+      <li><a href="#">Этапы</a></li>
+      <li><a href="#">Виды работ</a></li>
+      <li><a href="#">Цены</a></li>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="header-title header-about-title container">
+    <h1>Расчет стоимости</h1>
+  </div>
+</header>
+
+<section class="page-calc container">
+  <div class="page-calc-item calc-item-active">
+    <h2>Общие параметры обьекта</h2>
+    <div class="page-calc-item-block">
+      <div class="page-calc-item-block-left">
+        <span>
+          <label for="square">Площадь кв/м</label>
+          <input type="text" id="square">
+        </span>
+        <span>
+          <label for="">Тип жилья</label>
+          <select name="" id="">
+            <option value="">Новостройка</option>
+            <option value="">Вторичное жильё</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Кол-во комнат</label>
+          <input type="text">
+        </span>
+        <span>
+          <label for="">Санузлов</label>
+          <input type="text" name="" id="">
+        </span>
+        <span> 
+          <label for="">Дверей</label>
+          <input type="text">
+        </span>
+      </div>
+      <div class="page-calc-item-block-right">
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox1" />
+          <label for="checkbox1">Выравнивание полов</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox2" />
+          <label for="checkbox2">Электромонтажные работы</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox3" />
+          <label for="checkbox3">Замена радиаторов</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox">Дизайн проект</label>
+        </span>
+      </div>
+    </div>
+    <span class="button calc-button-next">Далее</span>
+
+  </div>
+  <div class="page-calc-item">
+    <h2>Комнаты</h2>
+    <div class="page-calc-item-block">
+      <div class="page-calc-item-block-left">
+        <span>
+          <label for="square">Площадь комнаты</label>
+          <input type="text" id="square">
+        </span>
+        <span>
+          <label for="">Вид потолка</label>
+          <select name="" id="">
+            <option value="">Натяжной</option>
+            <option value="">Покраска</option>
+            <option value="">Гипсокартон 2х уровневый</option>
+            <option value="">Гипсокартон 3х уровневый</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Настенное покрытие</label>
+          <select name="" id="">
+            <option value="">Обои</option>
+            <option value="">Обои под покраску</option>
+            <option value="">Покраска стен</option>
+            <option value="">Фактурная штукатурка</option>
+            <option value="">Веницианка</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Напольное покрытие</label>
+          <select name="" id="">
+            <option value="">Паркетная доска</option>
+            <option value="">Ламинат</option>
+            <option value="">Плитка</option>
+            <option value="">Линолеум</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Плинтус напольный</label>
+          <select name="" id="">
+            <option value="">Дерево</option>
+            <option value="">Пластик</option>
+          </select>
+        </span>
+      </div>
+      <div class="page-calc-item-block-right">
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox5" />
+          <label for="checkbox5">Плинтус потолочный</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox6" />
+          <label for="checkbox6">Выравнивание стен</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox13" />
+          <label for="checkbox13">Установка окон</label>
+        </span>
+      </div>
+    </div>
+    <span class="button calc-button-next">Далее</span>
+  </div>
+  <div class="page-calc-item">
+    <h2>Коридоры</h2>
+    <div class="page-calc-item-block">
+      <div class="page-calc-item-block-left">
+        <span>
+          <label for="square">Площадь коридора</label>
+          <input type="text" id="square">
+        </span>
+        <span>
+          <label for="">Вид потолка</label>
+          <select name="" id="">
+            <option value="">Натяжной</option>
+            <option value="">Покраска</option>
+            <option value="">Гипсокартон 2х уровневый</option>
+            <option value="">Гипсокартон 3х уровневый</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Настенное покрытие</label>
+          <select name="" id="">
+            <option value="">Обои</option>
+            <option value="">Обои под покраску</option>
+            <option value="">Покраска стен</option>
+            <option value="">Фактурная штукатурка</option>
+            <option value="">Веницианка</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Напольное покрытие</label>
+          <select name="" id="">
+            <option value="">Паркетная доска</option>
+            <option value="">Ламинат</option>
+            <option value="">Плитка</option>
+            <option value="">Линолеум</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Плинтус напольный</label>
+          <select name="" id="">
+            <option value="">Дерево</option>
+            <option value="">Пластик</option>
+          </select>
+        </span>
+      </div>
+      <div class="page-calc-item-block-right">
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox7" />
+          <label for="checkbox7">Плинтус потолочный</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox8" />
+          <label for="checkbox8">Выравнивание стен</label>
+        </span>
+        
+      </div>
+    </div>
+    <span class="button calc-button-next">Далее</span>
+  </div>
+  <div class="page-calc-item">
+    <h2>Кухня</h2>
+    <div class="page-calc-item-block">
+      <div class="page-calc-item-block-left">
+        <span>
+          <label for="square">Площадь кухни</label>
+          <input type="text" id="square">
+        </span>
+        <span>
+          <label for="">Вид потолка</label>
+          <select name="" id="">
+            <option value="">Натяжной</option>
+            <option value="">Покраска</option>
+            <option value="">Гипсокартон 2х уровневый</option>
+            <option value="">Гипсокартон 3х уровневый</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Настенное покрытие</label>
+          <select name="" id="">
+            <option value="">Обои</option>
+            <option value="">Обои под покраску</option>
+            <option value="">Покраска стен</option>
+            <option value="">Фактурная штукатурка</option>
+            <option value="">Веницианка</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Напольное покрытие</label>
+          <select name="" id="">
+            <option value="">Паркетная доска</option>
+            <option value="">Ламинат</option>
+            <option value="">Плитка</option>
+            <option value="">Линолеум</option>
+          </select>
+        </span>
+      </div>
+      <div class="page-calc-item-block-right">
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox9" />
+          <label for="checkbox9">Отштукатуривание стен</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox10" />
+          <label for="checkbox10">Выравнивание стен</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox14" />
+          <label for="checkbox14">Установка окон</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox15" />
+          <label for="checkbox15">Кухня под ключ</label>
+        </span>
+      </div>
+    </div>
+    <span class="button calc-button-next">Далее</span>
+  </div>
+  <div class="page-calc-item">
+    <h2>Ванная</h2>
+    <div class="page-calc-item-block">
+      <div class="page-calc-item-block-left">
+          <span>
+              <label for="">Ванная комната</label>
+              <select name="" id="">
+                <option value="">Совмещенная</option>
+                <option value="">Раздельная</option>
+              </select>
+            </span>
+        <span>
+          <label for="square">Площадь ванной</label>
+          <input type="text" id="square">
+        </span>
+        <span>
+          <label for="">Вид потолка</label>
+          <select name="" id="">
+            <option value="">Натяжной</option>
+            <option value="">Реечный</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Напольное покрытие</label>
+          <select name="" id="">
+            <option value="">Плитка</option>
+            <option value="">Наливной</option>
+            <option value="">3d</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Вид унитаза</label>
+          <select name="" id="">
+            <option value="">Встроенный</option>
+            <option value="">Классический</option>
+          </select>
+        </span>
+        <span>
+          <label for="">Вид ванной</label>
+          <select name="" id="">
+            <option value="">Душевая кабинка</option>
+            <option value="">Ванна классическая</option>
+            <option value="">Джакузи</option>
+          </select>
+        </span>
+      </div>
+      <div class="page-calc-item-block-right">
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox11" />
+          <label for="checkbox11">Разводка сантехники (полипропилен)</label>
+        </span>
+        <span>
+          <input type="checkbox" class="checkbox" id="checkbox12" />
+          <label for="checkbox12">Теплый пол</label>
+        </span>
+      </div>
+    </div>
+    <span class="button calc-button-next">Далее</span>
+  </div>
+  <div class="page-calc-item">
+    <h2>Оставьте заявку</h2>
+    <div class="page-calc-item-block">
+      <span>
+          <label for="">
+              Как вас зовут?
+            </label>
+            <input type="text">
+      </span>
+      <span>
+          <label for="">
+              Ваш телефон
+            </label>
+            <input type="text">
+      </span>
+      <span>
+          <label for="">
+              Ваша почта (если есть)
+            </label>
+            <input type="text">
+      </span>
+      <span>
+        <input type="submit" class="button" value="Оставить заявку">
+      </span>
+    </div>
+    <span id="d-none" class="button calc-button-next">Далее</span>
+  </div>
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-wrap container">
+    <div class="footer-wrap-left">
+      <p>
+        офис на нагитнской находится рядом с метро такое то
+        
+      </p>
+      <p>Собственный склад - там то там то текст нужен</p>
+      <a href="mailto:">example@mail.ru</a>
+    </div>
+    <div class="footer-wrap-right">
+      <p>
+        Офис находится по адресу:
+      </p>
+      <p>
+        Нагатинский проезд д1 москва, тоже текст нужен точный
+      </p>
+      <p>текст как пройти наверное, нужно пройтись</p>
+      <a href="tel:">+7 (999) 999-99-99</a>
+    </div>
+  </div>
+</footer>
+<div class="overlay"></div>
+<div class="popup">
+  <div class="popup-close">&times;</div>
+  <div class="title">Закажите обратный звонок</div>
+  <label for="">Как к вам обращаться?</label>
+  <input type="text">
+  <label for="">Ваш телефон</label>
+  <input type="text">
+  <input class="button" type="submit">
+  <small>
+      Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+  </small>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
